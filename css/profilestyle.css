@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    
+}
+    .container2 {
+        display: grid;
+        grid-template-columns: repeat;
+        grid-gap: 20px;
+}
+    .container2 > * {
+        grid-column: col-start / span 12;
+}
+    .container2 {
+        max-width: 100%;
+        margin: 0 auto;
+        font-family: RobotoRegular;
+        color: darkslategrey;
+    }
+
+    .container2 > * {
+        border: 4px solid #fe0371;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .header{
+         
+         display: flex;
+         flex-direction: column;
+    
+         margin-bottom: 20px;
+         border-bottom: 2px solid #b0e0ea;
+         padding: 20px 0;
+         justify-content: space-evenly;
+         align-items: center;
+         background: linear-gradient(to right, #f9b32e, #fe0371, #fe0371);
+     }
+     
+    
+    .header .logo a{
+         color: white;
+     }   
+     
+
+    .header a:link{
+        text-decoration: none;
+        color: white;
+    } 
+
+
+    .header a:hover{
+      color: #36c6f2;
+    } 
+
+    .logo {
+      font-size: 2em;
+      font-family: MontserratBlack;
+    }
+     
+     ::placeholder{
+         color: #fe0371;
+        
+     }
+     
+    section ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+    
+    }
+    
+    form{
+        display: grid;
+    
+    }
+.submit{
+    
+    border: none;
+        padding: 8px 25px;
+        color: white;
+        font-weight: 600;
+        font-family: MontserratBlack;
+        cursor: pointer;
+        border-radius: .5rem;
+        background-color: #f9b32e;
+    }
+}
+   
+     a:link{
+         text-decoration: none;
+     }
+
+     img{
+         max-width: 100%;
+     }
+     
+     .
+    h1{
+         font-family: PlayfairDisplayBold;
+         color:#f9b32e;
+         }
+     h2{ 
+         font-family: PlayfairDisplayRegular;
+         color:#f9b32e;
+         
+     }
+     h3{
+         font-family:
+         MontserratBold;
+         color: white;
+     }
+     h4{
+         font-family:PlayfairDisplayRegular;
+         color: darkslategrey;
+         
+     }
+     h5{
+        font-family: RobotoItalic;
+         font-size: 1em;
+         color: darkslategrey;
+     }
+     p > a{
+         color: #fe0371;
+     }
+
+@media (min-width: 500px) {
+
+  .side {
+    grid-column: col-start / span 3;
+    grid-row: 3;
+  }
+  .info {
+    grid-column: col-start / span 3;
+    grid-row: 4;
+  }
+  .content, .main-footer {
+    grid-column: col-start 4 / span 9;
+  }
+  section ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 700px) {
+  .main-nav {
+    grid-column: col-start / span 2;
+    grid-row: 2 / 4;
+  }
+  .content {
+    grid-column: col-start 3 / span 8;
+    grid-row: 2 / 4;
+  }
+  .side {
+    grid-column: col-start 11 / span 2;
+    grid-row: 2;
+  }
+  .info {
+    grid-column: col-start 11 / span 2;
+    grid-row: 3;
+  }
+  .main-footer {
+    grid-column: col-start / span 12;
+  }
+  section ul {
+    flex-direction: column;
+  }
+}
+
+
+/*fonts*/
+
+@font-face {
+    font-family: MontserratBlack;
+    src: url("Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url("Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url("Roboto-Light.ttf");
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url("Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url("Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: RobotoItalic;
+    src: url("Roboto-Italic.ttf");
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url("Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: RobotoBlackt;
+    src: url("Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: PlayfairDisplayItalic;
+    src: url("PlayfairDisplay-Italic.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayRegular;
+    src: url("PlayfairDisplay-Regular.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayBold;
+    src: url("PlayfairDisplay-Bold.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayBoldItalic;
+    src: url("PlayfairDisplay-BoldItalic.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayBlack;
+    src: url("PlayfairDisplay-BlackItalic.ttf");
+}

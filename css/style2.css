@@ -1,0 +1,472 @@
+/*mobile*/
+ @media only screen and (min-width : 100px) {
+    
+     .container{
+         max-width: 100%;
+         margin: 5px;
+         margin: 0 auto;
+         
+         display: grid;
+         grid-gap: 5px;
+         grid-template-columns: 1fr 1fr 1fr 1fr ;
+         grid-template-areas: 
+             "h h h h"
+             ". s s."
+             ". l l."
+             ". l l."
+             ". l l."
+             "f f f f"
+             "f f f f"
+             
+     }
+    
+     
+     h1{
+         grid-area: s;
+         text-align: center;
+     }
+     
+     .login{
+         grid-area: l;
+         width: 120%;
+
+        
+         
+         font-family: RobotoRegular;
+         color: darkslategrey;
+         margin-top: 50px;
+         margin-bottom: 100px;
+
+        }
+     .update{
+         grid-area: l;
+         
+     }
+     form input{
+         padding-top: 10px;
+         
+     }
+     .submit{
+        border: none;
+        padding: 8px 25px;
+        color: white;
+        font-family: MontserratBold;
+        cursor: pointer;
+        border-radius: .5rem;
+        background-color: #f9b32e;
+         margin-top: 30px;
+     }
+     
+     legend{
+         font-family: PlayfairDisplayBold;
+         color: #f9b32e;
+         font-size: 1.5em;
+     }
+     
+     
+     fieldset{ 
+         padding: 10px;
+         display: in;
+         align-content: center;
+         border-radius: .5em;
+         
+         
+     }
+     .header{
+         grid-area: h;
+         display: flex;
+         flex-direction: column;
+    
+         
+         border-bottom: 2px solid #b0e0ea;
+         padding: 20px 0;
+         justify-content: space-evenly;
+         align-items: center;
+         background: linear-gradient(to right, #f9b32e, #fe0371, #fe0371);
+     }
+     
+     
+    .header .logo a{
+         color: white;
+     }   
+     
+
+
+    .header a:link{
+        text-decoration: none;
+        color: white;
+    } 
+
+
+    .header a:hover{
+      color: #36c6f2;
+    } 
+
+    .logo {
+      font-size: 2em;
+      font-family: MontserratBlack;
+    }
+      .search{
+         margin-top: 8px;
+          padding: 0;
+         font-family: RobotoRegular;
+         
+     }
+     ::placeholder{
+         color: #fe0371;
+        
+     }
+     .go{
+         border: none;
+         margin-top: 8px;
+         background-color: #f9b32e;
+         color: white;
+         font-weight: 600;
+         font-family: MontserratBlack;
+         cursor: pointer;
+         padding: 5px;
+         border-radius: .5rem;
+     }
+     
+
+    
+     .footer{
+         
+         grid-area: f;
+         
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction:row;
+         
+         
+        
+         cursor: pointer;
+         color: white;
+         text-align: center;
+         padding: 20px 0;
+         background: linear-gradient(to right, #f9b32e, #f9b32e, #fe0371, #fe0371, #fe0371);
+     }
+     .links{ 
+        margin-left:20px;
+        
+         
+     }
+     .logo2{
+         font-size: 1.5em;
+         font-family: MontserratBlack;
+         flex-direction:row;
+         margin-left: 60px;
+         
+         
+     }
+     .footerbuttons {
+         
+     }
+     .contact{
+         margin-left: 15px;
+     }
+     .logofooter > h3{
+         
+    }
+     .footerbuttons ul{
+         list-style: none;
+         grid-area: s;
+         display: flex;
+         flex-direction: column;
+         
+     }
+     .contact ul{
+         list-style: none;
+     }
+     .contact ul li{
+         color: white;
+     }
+     .links ul{
+         list-style: none;
+         font-family: PlayfairDisplayRegular;
+         font-size: 1em;
+     }
+    .links ul li a{
+    color: white;
+        
+}
+     
+    .footer a:link{
+    text-decoration: none;
+    color: white;
+    
+}
+
+     .footer a:hover{
+    text-decoration: underline;
+    background-color: white;
+}
+
+     a:link{
+         text-decoration: none;
+     }
+
+     img{
+         max-width: 100%;
+     }
+     
+     
+    h1{
+         font-family: PlayfairDisplayBold;
+         color:#f9b32e;
+         }
+     h2{ 
+         font-family: PlayfairDisplayRegular;
+         color:#f9b32e;
+         
+     }
+     h3{
+         font-family:
+         MontserratBold;
+         color: white;
+     }
+     h4{
+         font-family:PlayfairDisplayRegular;
+         color: darkslategrey;
+         
+     }
+     h5{
+        font-family: RobotoItalic;
+         font-size: 1em;
+         color: darkslategrey;
+     }
+     p > a{
+         color: #fe0371;
+     }
+}end of first media query
+
+
+small devices
+@media only screen and (min-width : 768px) {
+    .container{
+         max-width: 100%;
+         margin: 5px;
+         margin: 0 auto;
+         grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+            
+            "h h h h"
+             ". s s."
+             ". l l."
+             ". l l."
+             ". l l."
+             "f f f f"
+             "f f f f";
+             
+         
+     }
+    
+    
+     .header{
+         grid-area: h;
+         display: flex;
+         flex-direction: column;
+     }
+      
+     .header nav ul {
+        display: flex;
+        flex-direction: ;
+        list-style: none;         
+}
+
+    h1{
+       grid-area: s; 
+    }
+    .login{
+        grid-area: l;
+    }
+     .footer{
+         
+         grid-area: f;
+         
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction:row;
+       
+     }
+     .links{ 
+        margin-left:20px;
+        
+     }
+     .logo2{
+         font-size: 1.5em;
+         flex-direction:row;
+         margin-left: 60px;
+         
+         
+     }
+     .footerbuttons {
+         
+     }
+     .contact{
+         margin-left: 20px;
+     }
+     .logofooter > h3{
+         
+    }
+     .footerbuttons ul{
+         list-style: none;
+         grid-area: s;
+         display: flex;
+         flex-direction: column;
+    }
+
+   
+
+    }end of second media query
+
+large devices
+
+@media only screen and (min-width : 1000px) {
+    
+    .container{
+         max-width: 100%;
+         margin: 5px;
+         margin: 0 auto;
+          grid-template-columns: repeat(6, 1fr); 
+        grid-template-areas: 
+            
+             "h h h h h h"
+             ". s s s s ."
+             ". . l l . ."
+             ". . l l . ."
+             ". . l l . ."
+             "f f f f f f"
+             "f f f f f f";
+     }
+    
+    
+     .header{
+         grid-area: h;
+         display: flex;
+         flex-direction: row;
+         padding: 10px 0;
+         justify-content: space-evenly;
+         align-items: center;
+         
+     }
+     
+      
+     .header nav ul {
+        display: flex;
+        list-style: none;
+        font-size: 1.5em;
+}
+
+    
+
+    .logo {
+      
+        font-size: 2.2em;
+        font-family: MontserratBlack;
+    }
+       h1{
+       grid-area: s; 
+    }
+    .login{
+        grid-area: l;
+    }
+    
+     .footer{
+         
+         grid-area: f;
+         
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+         justify-content: space-between;
+     }
+     .links{ 
+        margin-left:20px;
+        display:flex;
+         
+        
+         
+     }
+     .logo2{
+         font-size: 1.5em;
+         
+         flex-direction:row;
+         margin-left: 60px;
+         
+         
+     }
+     .contact{
+         margin-left: 1000px;
+     }
+
+     .footerbuttons ul{
+         list-style: none;
+         
+         display: flex;
+         flex-direction: column;
+    
+     }
+     .contact ul{
+         list-style: none;
+     }
+    }end of fourth media query
+
+
+fonts */
+
+@font-face {
+    font-family: MontserratBlack;
+    src: url("Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url("Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url("Roboto-Light.ttf");
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url("Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url("Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: RobotoItalic;
+    src: url("Roboto-Italic.ttf");
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url("Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: RobotoBlackt;
+    src: url("Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: PlayfairDisplayItalic;
+    src: url("PlayfairDisplay-Italic.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayRegular;
+    src: url("PlayfairDisplay-Regular.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayBold;
+    src: url("PlayfairDisplay-Bold.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayBoldItalic;
+    src: url("PlayfairDisplay-BoldItalic.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayBlack;
+    src: url("PlayfairDisplay-BlackItalic.ttf");
+}

@@ -1,0 +1,716 @@
+/*mobile*/
+ @media only screen and (min-width : 100px) {
+    
+     .container{
+         max-width: 100%;
+         margin: 5px;
+         margin: 0 auto;
+         
+         display: grid;
+         grid-gap: 5px;
+         grid-template-columns: 1fr;
+         grid-template-rows: .5 .5 .25 .15 .10 .20 .5 .15; 
+         grid-template-areas: 
+             "n n"
+             "h h"
+             "a a"
+             "tm tm"
+             "t t"
+             "rm rm"
+             "r r"
+             "vm vm"
+             "v v"
+             "d d"
+             "f f"
+     }
+       
+     p {
+    font-family: RobotoRegular;
+    color: darkslategrey;
+}
+     .ad{
+         
+        grid-area: a;
+         
+     }
+       .ad > .ad2{
+        display: none;
+    }
+        .ad >.ad1 {
+        display: block;
+     }
+      
+     
+     .header{
+         grid-area: n;
+         display: flex;
+         flex-direction: column;
+    
+         
+         border-bottom: 2px solid #b0e0ea;
+         padding: 20px 0;
+         justify-content: space-evenly;
+         align-items: center;
+         background: linear-gradient(to right, #f9b32e, #fe0371, #fe0371);
+     }
+     
+     .header nav ul li a{
+         color: white;
+     }   
+    .header .logo a{
+         color: white;
+     }   
+     .header nav ul {
+        display: flex;
+        flex-direction: ;
+        list-style: none;
+        font-family: MontserratBold;
+        font-size: 1.2em;
+         
+}
+
+    .header nav li {
+        margin-right: 30px;
+        color: white;
+    }
+
+    .header button {
+        border: none;
+        padding: 8px 25px;
+        color: white;
+        font-weight: 600;
+        font-family: MontserratBlack;
+        cursor: pointer;
+        border-radius: .5rem;
+        background-color: #f9b32e;
+    }
+
+    .header a:link{
+        text-decoration: none;
+        color: white;
+    } 
+
+
+    .header a:hover{
+      color: #36c6f2;
+    } 
+
+    .logo {
+      font-size: 2em;
+      font-family: MontserratBlack;
+    }
+     .search{
+         margin-top: 8px;
+         font-family: RobotoRegular;
+         
+     }
+     ::placeholder{
+         color: #fe0371;
+        
+     }
+     .go{
+         border: none;
+         margin-top: 8px;
+         background-color: #f9b32e;
+         color: white;
+         font-weight: 600;
+         font-family: MontserratBlack;
+         cursor: pointer;
+         padding: 5px;
+         border-radius: .5rem;
+     }
+     .featurearticle{
+         padding-top: 10px;
+         grid-area: h;
+         display: flex;
+         flex-direction: column;
+     }
+     
+     .civbig{
+         display: none;
+        width: 150%;
+     }
+    
+    .civsmall{
+         display: block;
+        width: 150%;
+     }
+     
+     .trendingmark{
+         grid-area: tm;
+         display: flex;
+         flex-direction: column;
+         padding-left: 10px;
+     }
+    
+     .trending{
+         
+         grid-area: t;
+         display: flex;
+         flex-direction: column;
+     }
+     .reviewmark{
+         grid-area: rm;
+         display: flex;
+         flex-direction: column;
+         padding-left: 10px;
+     }
+     .reviews{
+         
+         grid-area: r;
+         display: flex;
+         flex-direction: column;
+
+     }
+     .videomark{
+         grid-area: vm;
+         display: flex;
+         flex-direction: column;
+         padding-left: 10px;
+     }
+     .videos{
+         
+         grid-area: v;
+         display: flex;
+         flex-direction: column;
+     }
+     
+     .ads{
+         
+         grid-area: d;
+         display: flex;
+         flex-direction: column;
+     }
+     
+     .footer{
+         
+         grid-area: f;
+         
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction:row;
+         
+         
+        
+         cursor: pointer;
+         color: white;
+         text-align: center;
+         padding: 20px 0;
+         background: linear-gradient(to right, #f9b32e, #f9b32e, #fe0371, #fe0371, #fe0371);
+     }
+     .links{ 
+        margin-left:20px;
+        
+         
+     }
+     .logo2{
+         font-size: 1.5em;
+         font-family: MontserratBlack;
+         flex-direction:row;
+         margin-left: 60px;
+         
+         
+     }
+     .footerbuttons {
+         
+     }
+     .contact{
+         margin-left: 15px;
+     }
+     .logofooter > h3{
+         
+    }
+     .footerbuttons ul{
+         list-style: none;
+         grid-area: s;
+         display: flex;
+         flex-direction: column;
+     }
+     .contact ul{
+         list-style: none;
+     }
+     .contact ul li{
+         color: white;
+     }
+     .links ul{
+         list-style: none;
+         font-family: PlayfairDisplayRegular;
+         font-size: 1em;
+     }
+    .links ul li a{
+    color: white;
+        
+}
+     
+    .footer a:link{
+    text-decoration: none;
+    color: white;
+    
+}
+
+     .footer a:hover{
+    text-decoration: underline;
+    background-color: white;
+}
+
+     a:link{
+         text-decoration: none;
+     }
+
+     img{
+         max-width: 100%;
+     }
+     
+     .trendingmark, .reviewmark, 
+     .videomark{
+         background: linear-gradient(to right, #f9b32e, #fe0371, white);
+         margin-left: 2px;
+         margin-bottom: 10px;
+     }
+    h1{
+         font-family: PlayfairDisplayBold;
+         color:#f9b32e;
+         }
+     h2{ 
+         font-family: PlayfairDisplayRegular;
+         color:#f9b32e;
+         
+     }
+     h3{
+         font-family:
+         MontserratBold;
+         color: white;
+     }
+     h4{
+         font-family:PlayfairDisplayRegular;
+         color: darkslategrey;
+         
+     }
+     h5{
+        font-family: RobotoItalic;
+         font-size: 1em;
+         color: darkslategrey;
+     }
+     p > a{
+         color: #fe0371;
+     }
+}/*end of first media query*/
+
+
+/*small devices*/
+@media only screen and (min-width : 768px) {
+    .container{
+         max-width: 100%;
+         margin: 5px;
+         margin: 0 auto;
+         
+         display: grid;
+         grid-gap: 5px;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: .5 .5 .25 .15 .10 .20 .5 .15; 
+         grid-template-areas: 
+             "n n n n"
+             "h h h h"
+             "a a a ."
+             "tm tm tm tm"
+             "t t t t"
+             "rm rm rm rm"
+             "r r r r"
+             "vm vm vm vm"
+             "v v v v"
+             "d d d d"
+             "f f f f";
+     }
+    
+     .ad{
+         
+         grid-area: a;
+         padding-bottom: 20px;
+         padding-top: 20px;
+         
+     }
+  
+    .ad > .ad1{
+        display: none;
+    }
+    .ad >.ad2 {
+        display: block;
+    }
+     .header{
+         grid-area: n;
+         display: flex;
+         flex-direction: column;
+     }
+      
+     .header nav ul {
+        display: flex;
+        flex-direction: ;
+        list-style: none;         
+}
+
+    .header a:link{
+        text-decoration: none;
+        color: white;
+    } 
+
+
+    .header a:hover{
+      color: #36c6f2;
+    } 
+
+    .logo {
+      font-size: 2em;
+      font-family: MontserratBlack;
+    }
+     
+     .featurearticle{
+         padding-top: 10px;
+         grid-area: h;
+         display: flex;
+         flex-direction: column;
+     }
+    
+    .civbig{
+         display: block;
+        width: 150%;
+     }
+    
+    .civsmall{
+        display: none;
+        width: 150%;
+     }
+    .trendingmark{
+        grid-area: tm;
+        display: flex;
+        flex-direction:column;
+        padding-left: 10px;
+    }
+    
+     .trending{
+
+         grid-area: t;
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    .reviewmark{
+        grid-area: rm;
+        display: flex;
+        flex-direction:column;
+        padding-left: 10px;
+    }
+     .reviews{
+         
+         grid-area: r;
+         display: flex;
+         flex-direction: column;
+
+     }
+     
+    .videomark{
+        grid-area: vm;
+        display: flex;
+        flex-direction:column;
+        padding-left: 10px;
+    }
+    
+     .videos{
+         
+         grid-area: v;
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+         grid-template-rows: auto;
+     }
+     
+     .ads{
+         
+         grid-area: d;
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction:row;
+    }
+     
+     .footer{
+         
+         grid-area: f;
+         
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction:row;
+       
+     }
+     .links{ 
+        margin-left:20px;
+        
+     }
+     .logo2{
+         font-size: 1.5em;
+         flex-direction:row;
+         margin-left: 60px;
+         
+         
+     }
+     .footerbuttons {
+         
+     }
+     .contact{
+         margin-left: 20px;
+     }
+     .logofooter > h3{
+         
+    }
+     .footerbuttons ul{
+         list-style: none;
+         grid-area: s;
+         display: flex;
+         flex-direction: column;
+    }
+
+   
+
+    }/*end of second media query*/
+
+
+/*large devices*/
+
+@media only screen and (min-width : 1000px) {
+    
+    .container{
+         max-width: 100%;
+         margin: 5px;
+         margin: 0 auto;
+         
+         display: grid;
+         grid-gap: 5px;
+         grid-template-columns: repeat(6, 1fr);
+         grid-template-rows: .5 .5 .25 .15 .10 .20 .5 .15; 
+         grid-template-areas: 
+             "n n n n n n"
+             "h h h h h h "
+             "a a a a a a "
+             "tm tm tm tm tm tm"
+             "t t t t t t"
+             "rm rm rm rm rm rm"
+             "r r r r r r"
+             "vm vm vm vm vm vm"
+             "v v v v v v"
+             "d d d d d d"
+             "f f f f f f"
+     }
+.ad{
+         
+         grid-area: a;
+         padding-bottom: 20px;
+         padding-top: 20px;
+         
+     }
+  
+    .ad > .ad1{
+        display: none;
+    }
+    
+    .ad >.ad2 {
+        display: block;
+    }
+    
+     .header{
+         grid-area: n;
+         display: flex;
+         flex-direction: row;
+         padding: 10px 0;
+         justify-content: space-evenly;
+         align-items: center;
+         
+     }
+     
+      
+     .header nav ul {
+        display: flex;
+        list-style: none;
+        font-size: 1.5em;
+}
+
+    .header nav li {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .header button {
+        border: none;
+        padding: 10px 35px;
+        color: white;
+        font-weight: 100;
+        font-size: 1.2em;
+        border-radius: .5rem;
+
+    }
+
+    .logo {
+      
+        font-size: 2.2em;
+        font-family: MontserratBlack;
+    }
+     
+     .featurearticle{
+         padding-top: 10px;
+         grid-area: h;
+         display: flex;
+         flex-direction: column;
+     }
+    
+    .civbig{
+        display: block;
+        width: 150%;
+     }
+    
+    .civsmall{
+         display: none;
+        width: 150%;
+     }
+    .trendingmark{
+        grid-area: tm;
+        display: flex;
+        flex-direction:column;
+        padding-left: 10px;
+    }
+     .trending{
+         
+         grid-area: t;
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        
+     }
+     
+    .reviewmark{
+        grid-area: rm;
+        display: flex;
+        flex-direction:column;
+        padding-left: 10px;
+    }
+     .reviews{
+         
+         grid-area: r;
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
+
+     }
+     
+    .videomark{
+        grid-area: vm;
+         display: flex;
+        flex-direction:column;
+        padding-left: 10px;
+    }
+     .videos{
+         
+         grid-area: v;
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+         grid-template-rows: auto;
+     }
+     
+     .ads{
+         
+         grid-area: d;
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction:row;
+         justify-content: space-between;
+    }
+     
+     .footer{
+         
+         grid-area: f;
+         
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+         justify-content: space-between;
+     }
+     .links{ 
+        margin-left:20px;
+        display:flex;
+         
+        
+         
+     }
+     .logo2{
+         font-size: 1.5em;
+         
+         flex-direction:row;
+         margin-left: 60px;
+         
+         
+     }
+     .contact{
+         margin-left: 20px;
+     }
+
+     .footerbuttons ul{
+         list-style: none;
+         grid-area: s;
+         display: flex;
+         flex-direction: column;
+     }
+     .contact ul{
+         list-style: none;
+     }
+    }/*end of fourth media query*/
+
+
+/*fonts*/
+
+@font-face {
+    font-family: MontserratBlack;
+    src: url("Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url("Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url("Roboto-Light.ttf");
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url("Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url("Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: RobotoItalic;
+    src: url("Roboto-Italic.ttf");
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url("Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: RobotoBlackt;
+    src: url("Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: PlayfairDisplayItalic;
+    src: url("PlayfairDisplay-Italic.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayRegular;
+    src: url("PlayfairDisplay-Regular.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayBold;
+    src: url("PlayfairDisplay-Bold.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayBoldItalic;
+    src: url("PlayfairDisplay-BoldItalic.ttf");
+}
+@font-face {
+    font-family: PlayfairDisplayBlack;
+    src: url("PlayfairDisplay-BlackItalic.ttf");
+}
